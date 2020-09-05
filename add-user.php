@@ -3,10 +3,10 @@
     include "DB_Connection.php"; 
 ?>
 <?php
-    // if($_SESSION["user_role"]=='0')
-    // {
-    //     header("Location: $HostName/admin/post.php");
-    // }
+    if($_SESSION["user_role"]=='0')
+    {
+        header("Location: $HostName/admin/post.php");
+    }
 ?>
 <?php
     if(isset($_POST['save']))
